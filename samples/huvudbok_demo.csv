@@ -1,0 +1,7 @@
+datum;konto;verifikation;referens;text;belopp
+2026-01-03;1930;A1;1001;Kundbetalning faktura 1001;12500,00
+2026-01-05;1930;A2;BG556;Leverantör X faktura 556;-4200,00
+2026-01-07;1930;A3;1002;Kundbetalning faktura 1002;7800,00
+2026-01-07;1930;A4;1003;Kundbetalning faktura 1003;2200,00
+2026-01-09;1930;A5;BANKAVG;Bankavgift januari;-49,00
+2026-01-12;1930;A6;OKLAR;Manuell post som saknas i bank;199,00
