@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lokal avstämning</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Lokal avstämning</h1>
+      <p>Huvudbok mot kontoutdrag</p>
+    </div>
+    <button id="demoButton" type="button">Kör provdata</button>
+  </header>
+
+  <main>
+    <section class="input-band" aria-label="Import">
+      <form id="reconcileForm">
+        <div class="form-grid">
+          <label>
+            <span>Bolag</span>
+            <input name="company" value="Mitt bolag" autocomplete="off">
+          </label>
+          <label>
+            <span>Period</span>
+            <input name="period" type="month" value="2026-01">
+          </label>
+          <label>
+            <span>Huvudbokskonto</span>
+            <input name="account_filter" placeholder="t.ex. 1930">
+          </label>
+          <label>
+            <span>Datumspann</span>
+            <input name="max_days" type="number" min="0" max="30" value="3">
+          </label>
+          <label>
+            <span>Tolerans</span>
+            <input name="tolerance" inputmode="decimal" value="0,01">
+          </label>
+          <label class="file-picker">
+            <span>Huvudbok CSV/SIE/TXT/PDF</span>
+            <input name="ledger_file" type="file" accept=".csv,.txt,.sie,.se,.si,.pdf" required>
+          </label>
+          <label class="file-picker">
+            <span>Kontoutdrag CSV/TXT/PDF</span>
+            <input name="bank_file" type="file" accept=".csv,.txt,.pdf" required>
+          </label>
+        </div>
+        <div class="actions">
+          <button id="runButton" type="submit">Stäm av</button>
+          <span id="statusText" role="status"></span>
+        </div>
+      </form>
+    </section>
+
+    <section id="results" class="results-band is-hidden" aria-label="Resultat">
+      <div class="summary-grid" id="summaryGrid"></div>
+
+      <div class="toolbar">
+        <div class="tabs" role="tablist" aria-label="Resultatvyer">
+          <button class="tab is-active" type="button" data-view="all">Alla transaktioner</button>
+          <button class="tab" type="button" data-view="matches">Matchningar</button>
+          <button class="tab" type="button" data-view="deviations">Avvikelser</button>
+          <button class="tab" type="button" data-view="ledger">Huvudbok</button>
+          <button class="tab" type="button" data-view="bank">Bank</button>
+        </div>
+        <div class="download-links" id="downloadLinks"></div>
+      </div>
+
+      <div class="approve-row">
+        <button id="approveButton" type="button">Godkänn markerade</button>
+        <span id="approveStatus"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table id="resultTable"></table>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
