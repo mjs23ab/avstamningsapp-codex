@@ -1,0 +1,5 @@
+2026-01-03 ref 1001 Inbetalning faktura 1001 12 500,00
+2026-01-06 ref BG556 Betalning leverantör X -4 200,00
+2026-01-07 ref BUNT Inbetalning fakturor 1002 och 1003 10 000,00
+2026-01-09 ref BANKAVG Bankavgift -49,00
+2026-01-14 ref NY Bankpost utan bokföring -350,00
