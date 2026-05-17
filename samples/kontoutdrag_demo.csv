@@ -1,0 +1,6 @@
+datum;referens;beskrivning;belopp
+2026-01-03;1001;Inbetalning faktura 1001;12500,00
+2026-01-06;BG556;Betalning leverantör X;-4200,00
+2026-01-07;BUNT;Inbetalning fakturor 1002 och 1003;10000,00
+2026-01-09;BANKAVG;Bankavgift;-49,00
+2026-01-14;NY;Bankpost utan bokföring;-350,00
