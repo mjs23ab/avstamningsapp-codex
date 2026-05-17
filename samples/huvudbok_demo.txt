@@ -1,0 +1,6 @@
+2026-01-03 1930 A1 ref 1001 Kundbetalning faktura 1001 12 500,00
+2026-01-05 1930 A2 ref BG556 Leverantör X faktura 556 -4 200,00
+2026-01-07 1930 A3 ref 1002 Kundbetalning faktura 1002 7 800,00
+2026-01-07 1930 A4 ref 1003 Kundbetalning faktura 1003 2 200,00
+2026-01-09 1930 A5 ref BANKAVG Bankavgift januari -49,00
+2026-01-12 1930 A6 ref OKLAR Manuell post som saknas i bank 199,00
