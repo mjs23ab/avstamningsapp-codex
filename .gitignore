@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.python-version
+
+# Local reconciliation runs and imported accounting files.
+data/
+
+# Transfer archives generated during handoff.
+*.zip
+avstamningsapp/
+
+# Local editor state.
+.vscode/
+.idea/
